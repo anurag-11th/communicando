@@ -78,7 +78,10 @@ body {
 }
 
 .col-half .input-field input[type="text"] {
-    width: 90%;
+    
+    position: relative;
+    width: 84%;
+    left: -15px;
     /* border: 1px solid blue; */
 }
 
@@ -152,7 +155,7 @@ input[type="checkbox"]{
 
 .inner-chk label{
     display: inline-block;
-    width: 150px;
+    width: 160px;
     /* border: 1px solid red; */
     margin: 0px 0px;
 }
@@ -196,6 +199,14 @@ input[type="checkbox"]{
 
 .container {
     margin-top: 40px;
+}
+
+.set2{
+    position: relative;
+    margin: 25px !important;
+    left: -10px;
+    width: 92%;
+    top: -20px;
 }
 
 @media screen and (max-width:800px) {
@@ -280,6 +291,19 @@ input[type="checkbox"]{
 
     .input-field input[type="text"], input[type="email"] {
         width: 90%;
+    }
+
+    .col-half .input-field input[type="text"] {
+        position: relative;
+        width: 90%;
+        left: 0px;
+    }
+
+    .label{
+
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
     }
  }
 

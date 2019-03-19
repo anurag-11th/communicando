@@ -198,6 +198,10 @@ h2 {
     vertical-align: text-top;
 }
 
+.hidden {
+   display: none;
+}
+
 .row label {
     width: 20%;
     display: inline-block;

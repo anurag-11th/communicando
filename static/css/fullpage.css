@@ -138,6 +138,7 @@ html.fp-enabled,
     height: 13px;
     margin: 7px;
     position:relative;
+    left: 10px;
 }
 .fp-slidesNav ul li {
     display: inline-block;

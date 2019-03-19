@@ -140,12 +140,13 @@ section > span {
 	/* max-height: 100%; */
 }
 
-.content h1{
+.main-inner  h1{
 	border-bottom: 5px solid #fff;
 	font-family: 'Bree Serif', cursive, sans-serif;
 	text-emphasis: bold;
 	font-size: 45px;
 	border-color: #FF0000;
+	margin-left: 450px;
 }
 
 .content p {
@@ -249,11 +250,17 @@ svg {
 		top: 30%;
 		height: 65%;
 		display: block;
-		overflow-y: scroll;
+		overflow: auto;
 	}
 
-	.content h1 {
+	.main-inner  h1 {
 		font-size: 15px;
+   		border-bottom: 5px solid #fff;
+		font-family: 'Bree Serif', cursive, sans-serif;
+		text-emphasis: bold;
+		border-color: #FF0000;
+		margin-left: 0px;
+		margin-top: 70px;
 	}
 
 	.content p {

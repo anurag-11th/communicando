@@ -1,6 +1,6 @@
 import os
 import gc
-from flask import Flask, render_template, url_for, redirect, url_for, request, flash, session
+from flask import Flask, render_template, url_for, send_file,  redirect, url_for, request, flash, session
 import pymysql as psq
 from flask_mail import Mail, Message
 from threading import Thread
@@ -60,6 +60,11 @@ def confirmContact():
 		name = request.form.get("name")
 		email = request.form.get("email")
 		message = request.form.get("msg")
+		secEmail = request.form.get("sec-email")
+
+		if secEmail != "":
+			flash("Thank you for contacting us")
+			return redirect(url_for('confirmContact'))
 
 		db, cursor = connect()
         	#newMessage = Message(name, email, msg)
@@ -89,7 +94,12 @@ def confirmContact():
 		return redirect(url_for('index'))
 
 
-
+#@app.route('/download/')
+#def download():
+#	try:
+#		return send_file('/var/www/CCD/communicando/registrations.csv', attachment_filename='registrations.csv')
+#	except Exception as e:
+#		return str(e)
 
 
 @app.route('/register/')
